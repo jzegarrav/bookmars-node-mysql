@@ -15,8 +15,10 @@ pool.getConnection((err,connection)=>{
             console.log('DATABASE CONNECTION WAS REFUSED')
         }
     }
-    if(connection)connection.release()
-    console.log('DATABASE IS CONNECTED')
+    if(connection)
+        connection.release()
+    console.log('DB IS CONNECTED')
+    
     return
 })
 
